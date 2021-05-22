@@ -8,10 +8,10 @@ from posts.models import Post
 
 
 class PostForm(forms.ModelForm):
-	"""Post model form."""
+    """Post model form."""
 
-	class Meta:
-		"""Form settings."""
+    class Meta:
+        """Form settings."""
 
-		model = Post
-		fields = ('user', 'profile', 'title', 'photo')
+        model = Post
+        fields = ('user', 'profile', 'title', 'photo')

@@ -14,14 +14,6 @@
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
 
-                   <!-- {% for error in form.errors %}
-                        <div class="alert alert-danger" role="alert">
-                            {% for e in error %}
-                                {{ e }}
-                            {% endfor %}
-                        </div>
-                    {% endfor %}-->
-
                     <input type="hidden" name="user" value="{{ user.pk}}" />
                     <input type="hidden" name="profile" value="{{ profile.pk }}" />
 
@@ -58,4 +50,5 @@
         </div>
     </div>
 
-{% endblock %} 
+{% endblock %}
+
